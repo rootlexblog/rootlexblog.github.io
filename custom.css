@@ -1,0 +1,131 @@
+/* Twikoo */
+.el-textarea__inner {
+    min-height: 100px !important;
+}
+
+.tk-content :not(pre) > code[class*="language-"],
+.tk-content pre[class*="language-"] {
+    border-radius: 8px;
+}
+
+.tk-nick,
+.tk-nick-link,
+.tk-nick-link strong,
+.tk-action-count {
+    color: var(--cover-bg) !important;
+}
+
+.tk-action-icon svg {
+    fill: var(--cover-bg) !important;
+}
+
+.tk-comments-container {
+    min-height: 0 !important;
+}
+
+.tk-avatar {
+    width: 3rem !important;
+    height: 3rem !important;
+    margin-top: .5rem;
+}
+
+.tk-avatar img {
+    width: 3rem !important;
+    height: 3rem !important;
+}
+
+.tk-master .tk-avatar {
+    position: relative;
+    left: calc(100% - 3rem);
+}
+
+.tk-comment[data-v-d82ce9a0] {
+    margin-top: 0 !important;
+}
+
+.tk-content img {
+    max-width: 100% !important;
+}
+
+.tk-content p,
+.tk-content pre {
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.tk-content {
+    color: var(--font-color);
+    background: var(--global-bg);
+    padding: .5rem 1rem;
+    margin-top: 0 !important;
+    border-radius: 8px;
+    font-size: 95% !important;
+    width: fit-content;
+    max-width: 80%;
+    position: relative !important;
+    overflow: visible !important;
+    max-height: none !important;
+}
+
+.tk-content::before {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 10px;
+    left: -15px;
+    border-top: 0px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 0 solid transparent;
+    border-right: 15px solid var(--global-bg);
+}
+
+.tk-master .tk-content::before {
+    left: 100%;
+    border-left: 15px solid var(--global-bg);
+    border-right: 0 solid transparent;
+}
+
+.tk-master .tk-content {
+    margin: 0 4rem 0 auto;
+}
+
+.tk-row[data-v-d82ce9a0] {
+    width: fit-content;
+}
+
+.tk-master .tk-extras {
+    margin: 0 3.5rem 0 auto;
+    width: fit-content;
+    position: relative;
+}
+
+.tk-master .tk-row[data-v-d82ce9a0] {
+    margin: 0 4rem 0 auto;
+}
+
+.tk-extras {
+    opacity: 0;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+.tk-content:hover + .tk-extras {
+    opacity: 1;
+}
+
+.tk-expand {
+    width: 40% !important;
+    margin: .5rem auto 0;
+    padding: .5rem;
+    background: var(--global-bg) !important;
+    border-radius: 8px;
+}
+
+.tk-expand:hover {
+    width: 60% !important;
+}
